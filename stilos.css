@@ -1,0 +1,81 @@
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 30px;
+}
+
+/* Titulo */
+h1 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 25px;
+}
+
+/* Formulario */
+form {
+    background-color: white;
+    width: 400px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Separacion de campos */
+form div {
+    margin-bottom: 18px;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #333333;
+    font-weight: bold;
+}
+
+/* Cajas de texto y listas */
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Color al seleccionar un campo */
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* Botones */
+button {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Efecto al pasar el mouse */
+button:hover {
+    background-color: #1e40af;
+}
+
+/* Boton reiniciar */
+button[type="reset"] {
+    background-color: #64748b;
+}
+
+button[type="reset"]:hover {
+    background-color: #475569;
+}

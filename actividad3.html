@@ -1,16 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <!-- FORMULARIO REALIZAR COTIZACION
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stilos.css">
+  </head>
+  <body>
+    <!-- FORMULARIO REALIZAR COTIZACION
   //COMPRA UNA PC / PORTATIL
   // GENERAR UN CUADRO DE DIALOGO CON LA CONFIRMACION
   // APLICAR ESTILOS CSS -->
+    <h1>Realizar Cotización</h1>
 
+    <form action="" autocomplete="off" id="formulario">
+      <div>
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" minlength="3" required />
+      </div>
 
-</body>
+      <div>
+        <label for="nombres">Nombres</label>
+        <input type="text" id="nombres" minlength="3" required />
+      </div>
+
+      <div>
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" required />
+      </div>
+
+      <div>
+        <label for="tipo">Tipo de equipo</label>
+        <select id="tipo" required>
+          <option value="">Seleccione</option>
+          <option value="PC">PC</option>
+          <option value="Portátil">Portátil</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="equipo">Equipo</label>
+        <select id="equipo" required>
+          <option value="">Seleccione un equipo</option>
+          <option value="PC Básica">PC Básica</option>
+          <option value="PC Gamer">PC Gamer</option>
+          <option value="Portátil Básica">Portátil Básica</option>
+          <option value="Portátil Gamer">Portátil Gamer</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="cantidad">Cantidad</label>
+        <input type="number" id="cantidad" min="1" value="1" required />
+      </div>
+
+      <div>
+        <button type="submit">Cotizar</button>
+        <button type="reset">Reiniciar</button>
+      </div>
+    </form>
+
+    <script>
+      const formulario = document.getElementById("formulario");
+
+      formulario.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        if (confirm("¿Estás seguro de realizar la cotización?")) {
+          alert("Cotización realizada correctamente");
+        }
+      });
+    </script>
+  </body>
 </html>
