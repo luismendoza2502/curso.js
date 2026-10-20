@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" autocapitalize="off" id="formulario">
+    <div>
+      <label for="apellidos">Apellido</label>
+      <input type="text" id="apellido" minlength="3" required>
+    </div>
+
+    <div>
+      <label for="nombres">Nombres</label>
+      <input type="text" id="nombres" minlength="3" required>
+    </div>
+
+    <div>
+      <label for="fechanac"> Fecha nacimiento </label>
+      <input type="date" id="fechanac" min="1999-12-31" max="2026-10-20" required>
+    </div>
+
+    <div>
+      <label for="email">Correo electronico</label>
+      <input type="email" id="email" required>
+
+      <div>
+        <label for="">Experiencia</label>
+        <input type="number" min="0" max="30" id="experiencia" required>
+
+      </div>
+
+
+      <div>
+        <label for="">cargo</label>
+        <select name="cargo" id="cargo">
+          <option value=""></option>
+          <option value="1">Analisis</option>
+          <option value="2">Programador</option>
+          <option value="3">jefe</option>
+        
+        </select>
+
+      </div>
+        <button type="submit">enviar</button>
+        <button type="reset">reinicar</button>
+      
+    </div>
+
+  </form>
+
+  <script>
+    //Vamos a detener el elemento 
+    // El evento submit esta asociado al formulario y no al boton 
+  </script>
+</body>
+</html>
