@@ -1,33 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <button id="so">Sistema operativo</button>
-  <button id="bd">base de datos </button>
-  <button id="lp">lenguaje de programación</button>
-  
-  <script>
-    const b1=document.getElementById("so")
-    const b2= document.getElementById("bd")
-    const b3 = document.getElementById("lp")
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="so">Sistema operativo</button>
+    <button id="bd">base de datos</button>
+    <button id="lp">lenguaje de programación</button>
 
-    b1.addEventListener("click", function (){
-      console.log("Windows 11, linux, Android")
-    })
+    <script>
+      const b1 = document.getElementById("so");
+      const b2 = document.getElementById("bd");
+      const b3 = document.getElementById("lp");
 
-    b2.addEventListener("click", function(){
-      console.log("Ms sql server, sqlite")
-    })
-    b3.addEventListener("click", function(){
-      console.log("Python,js,php")
-    })
+      b1.addEventListener("click", function () {
+        console.log("Windows 11, linux, Android");
+      });
 
-
-
-  </script>
-</body>
+      b2.addEventListener("click", function () {
+        console.log("Ms sql server, sqlite");
+      });
+      b3.addEventListener("click", function () {
+        console.log("Python,js,php");
+      });
+    </script>
+  </body>
 </html>
