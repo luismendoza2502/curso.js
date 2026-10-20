@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <select name="paises" id="paises">
+    <opcion value="" selected>Selecciones</opcion>
+    <opcion value="1">Perú</opcion>
+    <opcion value="2">venzuela</opcion>
+    <opcion value="3">chile</opcion>
+    <opcion value="4">Ecuador</opcion>
+    <opcion value="5">Bolivia</opcion>
+    <opcion value="6">Colombia</opcion>
+  </select>
+
+  <input type="text" id="codigo">
+
+  <script>
+    const pais = document.getElementById("paises")
+    const codigo = document.getElementById("codigo")
+
+    pais.addEventListener("change", function(){
+      codigo.value= pais.value
+    })
+  </script>
+
+</body>
+</html>
