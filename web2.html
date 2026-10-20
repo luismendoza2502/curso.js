@@ -10,10 +10,15 @@
     <button id="bd">base de datos</button>
     <button id="lp">lenguaje de programación</button>
 
+    <input type="text" id="mensaje">
+    <h1 id="texto"></h1>
+
     <script>
       const b1 = document.getElementById("so");
       const b2 = document.getElementById("bd");
       const b3 = document.getElementById("lp");
+      const caja = document.getElementById("mensaje")
+      const contenido = document.getElementById("texto")
 
       b1.addEventListener("click", function () {
         console.log("Windows 11, linux, Android");
@@ -25,6 +30,10 @@
       b3.addEventListener("click", function () {
         console.log("Python,js,php");
       });
+      //Evento de teclado; keyup, keydown, keypress
+      caja.addEventListener("keydown", function(){
+        contenido.innerHTML = caja.value
+      })
     </script>
   </body>
 </html>
